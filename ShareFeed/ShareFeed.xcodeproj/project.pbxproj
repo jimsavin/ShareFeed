@@ -33,6 +33,14 @@
 			);
 			target = C24DADBD2D0A6CD2002E186C /* ShareFeed */;
 		};
+		C24DADDE2D0A6D48002E186C /* Exceptions for "ShareFeed" folder in "ShareFeedTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Feed Feature/FeedItem.swift",
+				"Feed Feature/FeedLoader.swift",
+			);
+			target = C24DADC52D0A6CD3002E186C /* ShareFeedTests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,6 +48,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				C24DADCE2D0A6CD3002E186C /* Exceptions for "ShareFeed" folder in "ShareFeed" target */,
+				C24DADDE2D0A6D48002E186C /* Exceptions for "ShareFeed" folder in "ShareFeedTests" target */,
 			);
 			path = ShareFeed;
 			sourceTree = "<group>";

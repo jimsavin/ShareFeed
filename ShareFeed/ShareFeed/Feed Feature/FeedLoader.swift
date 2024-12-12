@@ -1,11 +1,20 @@
 
 import Foundation
 
-enum LoadFeedResult {
-	case success([FeedItem])
-	case error(Error)
+public protocol HTTPClient {
+    func get(from url: URL)
 }
 
-protocol FeedLoader {
-	func load(completion: @escaping (LoadFeedResult) -> Void)
+public final class RemoteFeedLoader {
+    private let url: URL
+    private let client: HTTPClient
+
+    public init(url: URL, client: HTTPClient) {
+        self.url = url
+        self.client = client
+    }
+
+    public func load() {
+        client.get(from: url)
+    }
 }
